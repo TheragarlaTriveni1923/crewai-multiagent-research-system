@@ -28,7 +28,7 @@ if not os.getenv('OPENROUTER_API_KEY'):
     # In a real scenario, avoid hardcoding keys. Use environment variables or secure storage.
     # For this example, we'll write it to .env if not found.
     with open('.env', 'w') as f:
-        f.write('OPENROUTER_API_KEY=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\n')
+        f.write('OPENROUTER_API_KEY=API_key)
     load_dotenv()  # reload environment variables after writing to .env
 
 openrouter_api_key = os.getenv('OPENROUTER_API_KEY')
@@ -157,4 +157,5 @@ def main():
     print(result)
 
 if __name__ == "__main__":
+
     main()
